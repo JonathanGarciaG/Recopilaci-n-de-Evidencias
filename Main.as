@@ -11,9 +11,22 @@
 	public class Main extends MovieClip {
 		var swfm: Loader = new Loader();
 		var rprac1: URLRequest = new URLRequest("Practica No. 1 HM.swf");
+		var rprac2: URLRequest = new URLRequest("Practica No. 2 HM.swf");
+		var rprac3: URLRequest = new URLRequest("Practica No. 3 HM.swf");
+		var rprac5: URLRequest = new URLRequest("Practica No. 5 HM.swf");
+		var rprac52: URLRequest = new URLRequest("Practica No. 5-2 HM.swf");
+		var rprac6: URLRequest = new URLRequest("Practica No. 6 HM.swf");
+		var rprac8: URLRequest = new URLRequest("Practica 8.swf");
+		var rprac9: URLRequest = new URLRequest("Practica 9.swf");
+		var rprac11: URLRequest = new URLRequest("Practica 11.swf");
 		var rjuego1: URLRequest = new URLRequest("Practica No. 4 HM.swf");
-		var rmultm1: URLRequest = new URLRequest("xml/practica 7.swf");
-
+		var rjuego2: URLRequest = new URLRequest("Proyecto Unidad 1 Memorama Final.swf");
+		var rjuego3: URLRequest = new URLRequest("Proyecto Serpientes y Escaleras.swf");
+		var rmultm1: URLRequest = new URLRequest("practica 7.swf");
+		var rmultm2: URLRequest = new URLRequest("practica 7 2.swf");
+		var rmultm3: URLRequest = new URLRequest("Practica 10.swf");
+		//var rmultm4: URLRequest = new URLRequest("practica 7.swf");
+		
 		public function Main() {
 			stop();
 			INICIO.addEventListener(MouseEvent.CLICK, finicio);
@@ -22,99 +35,288 @@
 
 		function finicio(event: MouseEvent): void {
 			gotoAndStop(2);
-			ventana1.width = 0;
-			ventana2.width = 0;
-			ventana3.width = 0;
 			btnmenu.visible = false;
 			fondo.visible = false;
 			removebuttons();
 			prac.addEventListener(MouseEvent.CLICK, fpracticas);
 			vj.addEventListener(MouseEvent.CLICK, fvj);
 			multm.addEventListener(MouseEvent.CLICK, fmultm);
+			prac.addEventListener(MouseEvent.ROLL_OVER, s1);
+			vj.addEventListener(MouseEvent.ROLL_OVER, s2);
+			multm.addEventListener(MouseEvent.ROLL_OVER, s3);
+			prac.addEventListener(MouseEvent.ROLL_OUT, s11);
+			vj.addEventListener(MouseEvent.ROLL_OUT, s22);
+			multm.addEventListener(MouseEvent.ROLL_OUT, s33);
+			select1.alpha=0;
+			select2.alpha=0;
+			select3.alpha=0;
+			selectionn1.alpha=0;
+			selectionn2.alpha=0;
+			selectionn3.alpha=0;
 			ft2();
+		}
+		
+		function s1(event: Event): void {
+			var selection:Tween=new Tween(select1, "alpha", Strong.easeInOut, 0, 100, 0.5, true);
+			var selection2:Tween=new Tween(selectionn1, "alpha", Strong.easeInOut, 0, 100, 1, true);
+			var selection2move:Tween=new Tween(selectionn1, "x", Strong.easeInOut, selectionn1.x+10, 22.45, 1, true);
+		}
+		function s2(event: Event): void {
+			var selection:Tween=new Tween(select2, "alpha", Strong.easeInOut, 0, 100, 0.5, true);
+			var selection2:Tween=new Tween(selectionn2, "alpha", Strong.easeInOut, 0, 100, 1, true);
+			var selection2move:Tween=new Tween(selectionn2, "x", Strong.easeInOut, selectionn2.x+10, 22.45, 1, true);
+		}
+		function s3(event: Event): void {
+			var selection:Tween=new Tween(select3, "alpha", Strong.easeInOut, 0, 100, 0.5, true);
+			var selection2:Tween=new Tween(selectionn3, "alpha", Strong.easeInOut, 0, 100, 1, true);
+			var selection2move:Tween=new Tween(selectionn3, "x", Strong.easeInOut, selectionn3.x+10, 22.45, 1, true);
+		}
+		function s11(event: Event): void {
+			var selection:Tween=new Tween(select1, "alpha", Strong.easeInOut, 100, 0, 0.5, true);
+			var selection2:Tween=new Tween(selectionn1, "alpha", Strong.easeInOut, 100, 0, 0.5, true);
+		}
+		function s22(event: Event): void {
+			var selection:Tween=new Tween(select2, "alpha", Strong.easeInOut, 100, 0, 0.5, true);
+			var selection2:Tween=new Tween(selectionn2, "alpha", Strong.easeInOut, 100, 0 , 0.5, true);
+		}
+		function s33(event: Event): void {
+			var selection:Tween=new Tween(select3, "alpha", Strong.easeInOut, 100, 0, 0.5, true);
+			var selection2:Tween=new Tween(selectionn3, "alpha", Strong.easeInOut, 100, 0, 0.5, true);
 		}
 
 		function removebuttons() {
 			practica1.visible = false;
+			practica2.visible = false;
+			practica3.visible = false;
+			practica5.visible = false;
+			practica52.visible = false;
+			practica6.visible = false;
+			practica8.visible = false;
+			practica9.visible = false;
+			practica11.visible = false;
 			juego1.visible = false;
+			juego2.visible = false;
+			juego3.visible = false;
 			multm1.visible = false;
+			multm12.visible = false;
+			multm2.visible = false;
+			multm3.visible = false;
+			ventana1.visible = false;
+			ventana2.visible = false;
+			ventana3.visible = false;
+			selectionn1.alpha=0;
+			selectionn2.alpha=0;
+			selectionn3.alpha=0;
+			select1.alpha=0;
+			select2.alpha=0;
+			select3.alpha=0;
+		}
+		
+		function addbuttons1() {
+			practica1.visible = true;
+			practica2.visible = true;
+			practica3.visible = true;
+			practica5.visible = true;
+			practica52.visible = true;
+			practica6.visible = true;
+			practica8.visible = true;
+			practica9.visible = true;
+		}
+		
+		function addbuttons2() {
+			juego1.visible = true;
+			juego2.visible = true;
+			juego3.visible = true;
+		}
+		
+		function addbuttons3() {
+			multm1.visible = true;
+			multm12.visible = true;
+			multm2.visible = true;
+			multm3.visible = true;
 		}
 
 		function fpracticas(event: MouseEvent): void {
 			removebuttons();
-			texto.text = "";
-			ventana1.width = 0;
-			ventana2.width = 0;
-			ventana3.width = 0;
-			stage.addEventListener(Event.ENTER_FRAME, v1);
+			select1.alpha=1;
+			selectionn1.alpha=1;
+			ventana1.visible=true;
+			texto.text = "Practicas";
+			var giro:Tween=new Tween(ventana1, "rotationY", Regular.easeOut, 180, 360, 0.5, true);
+			//var scaleTween:Tween=new Tween(texto, "scaleX", Regular.easeOut, 0, 1, 2, true);
+			var scale2Tween:Tween=new Tween(texto, "scaleY", Regular.easeOut, 0, 1, 2, true);
+			var textoa:Tween=new Tween(texto, "alpha", Regular.easeOut, 0, 1, 2, true);
+			addbuttons1();
+			showprac();
+		}
+		
+		function showprac(){
+			var p:Tween=new Tween(practica1, "alpha", Regular.easeInOut, 0, 1, 1, true);
+			var p2:Tween=new Tween(practica2, "alpha", Regular.easeInOut, 0, 1, 2, true);
+			var p3:Tween=new Tween(practica3, "alpha", Regular.easeInOut, 0, 1, 3, true);
+			var p5:Tween=new Tween(practica5, "alpha", Regular.easeInOut, 0, 1, 4, true);
+			var p52:Tween=new Tween(practica52, "alpha", Regular.easeInOut, 0, 1, 5, true);
+			var p6:Tween=new Tween(practica6, "alpha", Regular.easeInOut, 0, 1, 6, true);
+			var p8:Tween=new Tween(practica8, "alpha", Regular.easeInOut, 0, 1, 1, true);
+			var p9:Tween=new Tween(practica9, "alpha", Regular.easeInOut, 0, 1, 2, true);
+			var p11:Tween=new Tween(practica11, "alpha", Regular.easeInOut, 0, 1, 2, true);
 		}
 
 		function fvj(event: MouseEvent): void {
 			removebuttons();
-			texto.text = "";
-			ventana1.width = 0;
-			ventana2.width = 0;
-			ventana3.width = 0;
-			stage.addEventListener(Event.ENTER_FRAME, v2);
+			select2.alpha=1;
+			selectionn2.alpha=1;
+			ventana2.visible=true;
+			texto.text = "Videojuegos";
+			var giro:Tween=new Tween(ventana2, "rotationX", Regular.easeOut, 180, 360, 0.5, true);
+			var scale2Tween:Tween=new Tween(texto, "scaleY", Regular.easeOut, 0, 1, 2, true);
+			var textoa:Tween=new Tween(texto, "alpha", Regular.easeOut, 0, 1, 2, true);
+			addbuttons2();
+			showvj();
+			//stage.addEventListener(Event.ENTER_FRAME, v2);
+		}
+		
+		function showvj(){
+			var p:Tween=new Tween(juego1, "alpha", Regular.easeInOut, 0, 1, 1, true);
+			var p2:Tween=new Tween(juego2, "alpha", Regular.easeInOut, 0, 1, 2, true);
+			var p3:Tween=new Tween(juego3, "alpha", Regular.easeInOut, 0, 1, 3, true);
 		}
 
 		function fmultm(event: MouseEvent): void {
 			removebuttons();
-			texto.text = "";
-			ventana1.width = 0;
-			ventana2.width = 0;
-			ventana3.width = 0;
-			stage.addEventListener(Event.ENTER_FRAME, v3);
+			select3.alpha=1;
+			selectionn3.alpha=1;
+			ventana3.visible=true;
+			texto.text = "Multimedia";
+			var giro:Tween=new Tween(ventana3, "rotationZ", Regular.easeOut, 180, 360, 0.5, true);
+			var scale2Tween:Tween=new Tween(texto, "scaleY", Regular.easeOut, 0, 1, 2, true);
+			var textoa:Tween=new Tween(texto, "alpha", Regular.easeOut, 0, 1, 2, true);
+			addbuttons3();
+			showmultm();
+			//stage.addEventListener(Event.ENTER_FRAME, v3);
 		}
-
-		function v1(event: Event): void {
-			ventana1.width += 80;
-			if (int(ventana1.width) == 560) {
-				stage.removeEventListener(Event.ENTER_FRAME, v1);
-				texto.text = "Practicas";
-				practica1.visible = true;
-			}
-		}
-
-		function v2(event: Event): void {
-			ventana2.width += 80;
-			if (int(ventana2.width) == 560) {
-				stage.removeEventListener(Event.ENTER_FRAME, v2);
-				texto.text = "Videojuegos";
-				juego1.visible = true;
-			}
-		}
-
-		function v3(event: Event): void {
-			ventana3.width += 80;
-			if (int(ventana3.width) == 560) {
-				stage.removeEventListener(Event.ENTER_FRAME, v3);
-				texto.text = "Multimedia";
-				multm1.visible = true;
-			}
+		
+		function showmultm(){
+			var p:Tween=new Tween(multm1, "alpha", Regular.easeInOut, 0, 1, 1, true);
+			var p1:Tween=new Tween(multm12, "alpha", Regular.easeInOut, 0, 1, 2, true);
+			var p2:Tween=new Tween(multm2, "alpha", Regular.easeInOut, 0, 1, 3, true);
+			var p3:Tween=new Tween(multm3, "alpha", Regular.easeInOut, 0, 1, 4, true);
 		}
 
 		function ft2() {
 			practica1.addEventListener(MouseEvent.CLICK, fpractica1);
+			practica2.addEventListener(MouseEvent.CLICK, fpractica2);
+			practica3.addEventListener(MouseEvent.CLICK, fpractica3);
+			practica5.addEventListener(MouseEvent.CLICK, fpractica5);
+			practica52.addEventListener(MouseEvent.CLICK, fpractica52);
+			practica6.addEventListener(MouseEvent.CLICK, fpractica6);
+			practica8.addEventListener(MouseEvent.CLICK, fpractica8);
+			practica9.addEventListener(MouseEvent.CLICK, fpractica9);
+			practica11.addEventListener(MouseEvent.CLICK, fpractica11);
 			juego1.addEventListener(MouseEvent.CLICK, fjuego1);
+			juego2.addEventListener(MouseEvent.CLICK, fjuego2);
+			juego3.addEventListener(MouseEvent.CLICK, fjuego3);
 			multm1.addEventListener(MouseEvent.CLICK, fmultm1);
+			multm12.addEventListener(MouseEvent.CLICK, fmultm12);
+			multm2.addEventListener(MouseEvent.CLICK, fmultm2);
 			btnmenu.addEventListener(MouseEvent.CLICK, fvolver);
 		}
 
 
 		function fpractica1(event: MouseEvent): void {
 			fondo.visible = true;
-			//var strongeasein:Tween = new Tween(fondo,"y",Elastic.easeInOut,-1000,fondo.y,0.5,true);
 			swfm.load(rprac1);
+			swfm.x=150;
 			addChild(swfm);
 			btnmenu.visible = true;
 		}
-
+		
+		function fpractica2(event: MouseEvent): void {
+			fondo.visible = true;
+			swfm.load(rprac2);
+			swfm.x=150;
+			addChild(swfm);
+			btnmenu.visible = true;
+		}
+		
+		function fpractica3(event: MouseEvent): void {
+			fondo.visible = true;
+			swfm.load(rprac3);
+			swfm.x=150;
+			addChild(swfm);
+			btnmenu.visible = true;
+		}
+		
+		function fpractica5(event: MouseEvent): void {
+			fondo.visible = true;
+			swfm.load(rprac5);
+			swfm.x=175;
+			addChild(swfm);
+			btnmenu.visible = true;
+		}
+		
+		function fpractica52(event: MouseEvent): void {
+			fondo.visible = true;
+			swfm.load(rprac52);
+			swfm.x=175;
+			addChild(swfm);
+			btnmenu.visible = true;
+		}
+		
+		function fpractica6(event: MouseEvent): void {
+			fondo.visible = true;
+			swfm.load(rprac6);
+			swfm.x=175;
+			addChild(swfm);
+			btnmenu.visible = true;
+		}
+		
+		function fpractica8(event: MouseEvent): void {
+			fondo.visible = true;
+			swfm.load(rprac8);
+			swfm.x=150;
+			addChild(swfm);
+			btnmenu.visible = true;
+		}
+		
+		function fpractica9(event: MouseEvent): void {
+			fondo.visible = true;
+			swfm.load(rprac9);
+			swfm.x=150;
+			addChild(swfm);
+			btnmenu.visible = true;
+		}
+		
+		function fpractica11(event: MouseEvent): void {
+			fondo.visible = true;
+			swfm.load(rprac3);
+			swfm.x=150;
+			addChild(swfm);
+			btnmenu.visible = true;
+		}
+		
+		
 
 		function fjuego1(event: MouseEvent): void {
 			fondo.visible = true;
-			//var strongeasein:Tween = new Tween(fondo,"y",Elastic.easeInOut,-1000,fondo.y,0.5,true);
 			swfm.load(rjuego1);
+			swfm.x=150;
+			addChild(swfm);
+			btnmenu.visible = true;
+		}
+		
+		function fjuego2(event: MouseEvent): void {
+			fondo.visible = true;
+			swfm.load(rjuego2);
+			swfm.x=150;
+			addChild(swfm);
+			btnmenu.visible = true;
+		}
+		
+		function fjuego3(event: MouseEvent): void {
+			fondo.visible = true;
+			swfm.load(rjuego3);
+			swfm.x=150;
 			addChild(swfm);
 			btnmenu.visible = true;
 		}
@@ -122,11 +324,35 @@
 
 		function fmultm1(event: MouseEvent): void {
 			fondo.visible = true;
-			//var strongeasein:Tween = new Tween(fondo,"y",Elastic.easeInOut,-1000,fondo.y,0.5,true);
 			swfm.load(rmultm1);
+			swfm.x=100;
 			addChild(swfm);
 			btnmenu.visible = true;
 		}
+		
+		function fmultm12(event: MouseEvent): void {
+			fondo.visible = true;
+			swfm.load(rmultm2);
+			swfm.x=0;
+			addChild(swfm);
+			btnmenu.visible = true;
+		}
+		
+		function fmultm2(event: MouseEvent): void {
+			fondo.visible = true;
+			swfm.load(rmultm3);
+			swfm.x=50;
+			addChild(swfm);
+			btnmenu.visible = true;
+		}
+		
+		//pendiente
+		/*function fmultm3(event: MouseEvent): void {
+			fondo.visible = true;
+			swfm.load(rmultm3);
+			addChild(swfm);
+			btnmenu.visible = true;
+		}*/
 
 
 		function fvolver(event: MouseEvent): void {

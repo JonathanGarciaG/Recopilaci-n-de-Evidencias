@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<art>
+	<locacion>
+		<imagen>imagenes/img1.jpg</imagen>
+	</locacion>
+<locacion>
+		<imagen>imagenes/img2.jpg</imagen>
+	</locacion>
+<locacion>
+		<imagen>imagenes/img3.jpg</imagen>
+	</locacion>
+<locacion>
+		<imagen>/imagenes/img4.jpg</imagen>
+	</locacion>
+<locacion>
+		<imagen>/imagenes/img5.jpg</imagen>
+	</locacion>
+<locacion>
+		<imagen>/imagenes/img6.jpg</imagen>
+	</locacion>
+<locacion>
+		<imagen>/imagenes/img7.jpg</imagen>
+	</locacion>
+<locacion>
+		<imagen>/imagenes/img8.png</imagen>
+	</locacion>
+<locacion>
+		<imagen>/imagenes/img9.png</imagen>
+	</locacion>
+<locacion>
+		<imagen>/imagenes/img10.png</imagen>
+	</locacion>
+<locacion>
+		<imagen>/imagenes/img11.png</imagen>
+	</locacion>
+</art>
