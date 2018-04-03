@@ -426,7 +426,7 @@
 			var textop: Tween = new Tween(descripcion, "x", Strong.easeInOut, 660, 600, 0.5, true);
 			var alphat: Tween = new Tween(descripcion, "alpha", Strong.easeInOut, 1, 0, 0.5, true);
 		}
-		
+
 		//funcion para mostrar animacion de imagen y descripcion de practica 3
 		function showp3(event: MouseEvent): void {
 			prac3img.visible = true;
@@ -445,7 +445,7 @@
 			var textop: Tween = new Tween(descripcion, "x", Strong.easeInOut, 660, 600, 0.5, true);
 			var alphat: Tween = new Tween(descripcion, "alpha", Strong.easeInOut, 1, 0, 0.5, true);
 		}
-		
+
 		//funcion para mostrar animacion de imagen y descripcion de practica 5
 		function showp5(event: MouseEvent): void {
 			prac5img.visible = true;
@@ -464,7 +464,7 @@
 			var textop: Tween = new Tween(descripcion, "x", Strong.easeInOut, 660, 600, 0.5, true);
 			var alphat: Tween = new Tween(descripcion, "alpha", Strong.easeInOut, 1, 0, 0.5, true);
 		}
-		
+
 		//funcion para mostrar animacion de imagen y descripcion de practica 5 2
 		function showp52(event: MouseEvent): void {
 			descripcion.visible = true;
@@ -482,7 +482,7 @@
 			var textop: Tween = new Tween(descripcion, "x", Strong.easeInOut, 660, 600, 0.5, true);
 			var alphat: Tween = new Tween(descripcion, "alpha", Strong.easeInOut, 1, 0, 0.5, true);
 		}
-		
+
 		//funcion para mostrar animacion de imagen y descripcion de practica 6
 		function showp6(event: MouseEvent): void {
 			prac6img.visible = true;
@@ -501,7 +501,7 @@
 			var textop: Tween = new Tween(descripcion, "x", Strong.easeInOut, 660, 600, 0.5, true);
 			var alphat: Tween = new Tween(descripcion, "alpha", Strong.easeInOut, 1, 0, 0.5, true);
 		}
-		
+
 		//funcion para mostrar animacion de imagen y descripcion de practica 8
 		function showp8(event: MouseEvent): void {
 			prac8img.visible = true;
@@ -520,7 +520,7 @@
 			var textop: Tween = new Tween(descripcion, "x", Strong.easeInOut, 660, 600, 0.5, true);
 			var alphat: Tween = new Tween(descripcion, "alpha", Strong.easeInOut, 1, 0, 0.5, true);
 		}
-		
+
 		//funcion para mostrar animacion de imagen y descripcion de practica 9
 		function showp9(event: MouseEvent): void {
 			prac9img.visible = true;
@@ -539,7 +539,7 @@
 			var textop: Tween = new Tween(descripcion, "x", Strong.easeInOut, 660, 600, 0.5, true);
 			var alphat: Tween = new Tween(descripcion, "alpha", Strong.easeInOut, 1, 0, 0.5, true);
 		}
-		
+
 		//funcion para mostrar animacion de imagen y descripcion de practica 11
 		function showp11(event: MouseEvent): void {
 			prac11img.visible = true;
@@ -558,7 +558,7 @@
 			var textop: Tween = new Tween(descripcion, "x", Strong.easeInOut, 660, 600, 0.5, true);
 			var alphat: Tween = new Tween(descripcion, "alpha", Strong.easeInOut, 1, 0, 0.5, true);
 		}
-		
+
 		//funcion para mostrar animacion de imagen y descripcion del juego 1
 		function showj1(event: MouseEvent): void {
 			descripcion.visible = true;
@@ -576,7 +576,7 @@
 			var textop: Tween = new Tween(descripcion, "x", Strong.easeInOut, 660, 600, 0.5, true);
 			var alphat: Tween = new Tween(descripcion, "alpha", Strong.easeInOut, 1, 0, 0.5, true);
 		}
-		
+
 		//funcion para mostrar animacion de imagen y descripcion del juego 2
 		function showj2(event: MouseEvent): void {
 			descripcion.visible = true;
@@ -594,7 +594,7 @@
 			var textop: Tween = new Tween(descripcion, "x", Strong.easeInOut, 660, 600, 0.5, true);
 			var alphat: Tween = new Tween(descripcion, "alpha", Strong.easeInOut, 1, 0, 0.5, true);
 		}
-		
+
 		//funcion para mostrar animacion de imagen y descripcion del juego 1
 		function showj3(event: MouseEvent): void {
 			descripcion.visible = true;
@@ -612,7 +612,7 @@
 			var textop: Tween = new Tween(descripcion, "x", Strong.easeInOut, 660, 600, 0.5, true);
 			var alphat: Tween = new Tween(descripcion, "alpha", Strong.easeInOut, 1, 0, 0.5, true);
 		}
-		
+
 		//funcion para mostrar animacion de imagen y descripcion de la galeria 1
 		function showm1(event: MouseEvent): void {
 			descripcion.visible = true;
@@ -630,7 +630,7 @@
 			var textop: Tween = new Tween(descripcion, "x", Strong.easeInOut, 660, 600, 0.5, true);
 			var alphat: Tween = new Tween(descripcion, "alpha", Strong.easeInOut, 1, 0, 0.5, true);
 		}
-		
+
 		//funcion para mostrar animacion de imagen y descripcion de la galeria 1 2
 		function showm12(event: MouseEvent): void {
 			descripcion.visible = true;
@@ -648,7 +648,7 @@
 			var textop: Tween = new Tween(descripcion, "x", Strong.easeInOut, 660, 600, 0.5, true);
 			var alphat: Tween = new Tween(descripcion, "alpha", Strong.easeInOut, 1, 0, 0.5, true);
 		}
-		
+
 		//funcion para mostrar animacion de imagen y descripcion de la galeria 2
 		function showm2(event: MouseEvent): void {
 			descripcion.visible = true;
@@ -666,7 +666,7 @@
 			var textop: Tween = new Tween(descripcion, "x", Strong.easeInOut, 660, 600, 0.5, true);
 			var alphat: Tween = new Tween(descripcion, "alpha", Strong.easeInOut, 1, 0, 0.5, true);
 		}
-		
+
 		//funcion para mostrar descripcion de la conclusion en español
 		function showconc1(event: MouseEvent): void {
 			descripcion.visible = true;
@@ -680,7 +680,7 @@
 			var textop: Tween = new Tween(descripcion, "x", Strong.easeInOut, 660, 600, 0.5, true);
 			var alphat: Tween = new Tween(descripcion, "alpha", Strong.easeInOut, 1, 0, 0.5, true);
 		}
-		
+
 		//funcion para mostrar descripcion de la conclusion en ingles
 		function showconc2(event: MouseEvent): void {
 			descripcion.visible = true;
@@ -695,6 +695,8 @@
 			var alphat: Tween = new Tween(descripcion, "alpha", Strong.easeInOut, 1, 0, 0.5, true);
 		}
 
+		//Funciones para inciar practicas
+		//Practica 1
 		function fpractica1(event: MouseEvent): void {
 			fondo.visible = true;
 			swfm.load(rprac1);
@@ -704,6 +706,7 @@
 			btnmenu.visible = true;
 		}
 
+		//Practica 2
 		function fpractica2(event: MouseEvent): void {
 			fondo.visible = true;
 			swfm.load(rprac2);
@@ -713,6 +716,7 @@
 			btnmenu.visible = true;
 		}
 
+		//Practica 3
 		function fpractica3(event: MouseEvent): void {
 			fondo.visible = true;
 			swfm.load(rprac3);
@@ -722,6 +726,7 @@
 			btnmenu.visible = true;
 		}
 
+		//Practica 5
 		function fpractica5(event: MouseEvent): void {
 			fondo.visible = true;
 			swfm.load(rprac5);
@@ -731,6 +736,7 @@
 			btnmenu.visible = true;
 		}
 
+		//Practica 5 2
 		function fpractica52(event: MouseEvent): void {
 			fondo.visible = true;
 			swfm.load(rprac52);
@@ -739,6 +745,7 @@
 			btnmenu.visible = true;
 		}
 
+		//Practica 6
 		function fpractica6(event: MouseEvent): void {
 			fondo.visible = true;
 			swfm.load(rprac6);
@@ -747,6 +754,7 @@
 			btnmenu.visible = true;
 		}
 
+		//Practica 8
 		function fpractica8(event: MouseEvent): void {
 			fondo.visible = true;
 			swfm.load(rprac8);
@@ -756,6 +764,7 @@
 			btnmenu.visible = true;
 		}
 
+		//Practica 9
 		function fpractica9(event: MouseEvent): void {
 			fondo.visible = true;
 			swfm.load(rprac9);
@@ -765,6 +774,7 @@
 			btnmenu.visible = true;
 		}
 
+		//Practica 11
 		function fpractica11(event: MouseEvent): void {
 			fondo.visible = true;
 			swfm.load(rprac11);
@@ -775,7 +785,8 @@
 		}
 
 
-
+//funciones para inciar juegos
+		//Juego 1
 		function fjuego1(event: MouseEvent): void {
 			fondo.visible = true;
 			swfm.load(rjuego1);
@@ -785,6 +796,7 @@
 			btnmenu.visible = true;
 		}
 
+		//Juego 2
 		function fjuego2(event: MouseEvent): void {
 			fondo.visible = true;
 			swfm.load(rjuego2);
@@ -794,6 +806,7 @@
 			btnmenu.visible = true;
 		}
 
+		//Juego 3
 		function fjuego3(event: MouseEvent): void {
 			fondo.visible = true;
 			swfm.load(rjuego3);
@@ -804,6 +817,8 @@
 		}
 
 
+		//Funciones para inciar Multimedia}
+		//Multimedia 1
 		function fmultm1(event: MouseEvent): void {
 			fondo.visible = true;
 			swfm.load(rmultm1);
@@ -813,6 +828,7 @@
 			btnmenu.visible = true;
 		}
 
+		//Multimedia 1 2
 		function fmultm12(event: MouseEvent): void {
 			fondo.visible = true;
 			swfm.load(rmultm2);
@@ -822,6 +838,7 @@
 			btnmenu.visible = true;
 		}
 
+		//Multimedia 2
 		function fmultm2(event: MouseEvent): void {
 			fondo.visible = true;
 			swfm.load(rmultm3);
@@ -832,6 +849,7 @@
 		}
 
 
+		//Multimedia 3
 		function fmultm3(event: MouseEvent): void {
 			concspa.visible = true;
 			conceng.visible = true;
@@ -842,6 +860,7 @@
 		}
 
 
+		//funcion para volver al menu
 		function fvolver(event: MouseEvent): void {
 			removeChild(swfm);
 			btnmenu.visible = false;
@@ -850,7 +869,7 @@
 
 
 
-
+//funcion para inicar el video de conclusion en español
 		function fconc1(e: MouseEvent): void {
 			fondo.visible = true;
 			exit_btn.visible = true;
@@ -864,6 +883,7 @@
 			play_btn.addEventListener(MouseEvent.CLICK, playrep);
 		}
 
+		//funcion para inicar el video de conclusion en ingles
 		function fconc2(e: MouseEvent): void {
 			fondo.visible = true;
 			exit_btn.visible = true;
@@ -877,18 +897,21 @@
 			play_btn.addEventListener(MouseEvent.CLICK, playrep);
 		}
 
+		//funcion para pausar video
 		public function pauserep(ev: MouseEvent) {
 			v._stream.pause();
 			play_btn.visible = true;
 			pause_btn.visible = false;
 		}
 
+		//funcion para reproducir video
 		public function playrep(ev: MouseEvent) {
 			v._stream.resume();
 			pause_btn.visible = true;
 			play_btn.visible = false;
 		}
 
+		//funcion para salir del video
 		public function ext(e: MouseEvent): void {
 			v._stream.pause();
 			removeChild(v);
